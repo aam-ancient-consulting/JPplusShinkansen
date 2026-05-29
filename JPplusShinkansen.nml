@@ -2198,9 +2198,9 @@ item(FEAT_TRAINS, series_0_4car) {
 		cargo_capacity:                 28 * CapacityFactor();
 		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
-		cost_factor:                    500;
-		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor();
-		purchase_running_cost_factor:   300 + 125 * NumberCarsInConsist();
+		cost_factor:                    125 + 3 * 189 * 16;
+		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
+		purchase_running_cost_factor:   854;
 	}
 }
 # 1 "src/trains/0_series/0_series.pnml" 2
