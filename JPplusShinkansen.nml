@@ -512,6 +512,7 @@ item(FEAT_TRAINS, mu_car_full, 1112) {}
 item(FEAT_TRAINS, mu_car_mail, 1113) {}
 
 item(FEAT_TRAINS, series_0, 123) {}
+item(FEAT_TRAINS, series_0_4car, 126) {}
 item(FEAT_TRAINS, series_922, 922) {}
 item(FEAT_TRAINS, series_100, 124) {}
 // 200 Series Shinkansen
@@ -2107,6 +2108,100 @@ item(FEAT_TRAINS, series_0) {
 		//weight:						// Apply weight to graphics block to calculate Max T.E. correctly
         //running_cost_factor:            sw_0_series_running_costs;
       }
+}
+# 1 "src/trains/0_series/0_series.pnml" 2
+# 1 "src/trains/0_series/0_series_4car_formations.pnml" 1
+
+/* 4-car fixed formation: positions 0-2 = cab01, 3-5 = coach, 6-8 = panto, 9-11 = cab02 */
+
+switch (FEAT_TRAINS, SELF, sw_0_series_4car_forwards, position_in_consist) {
+	0..2:	sw_0_series_cab01f;
+	3..5:	sw_0_series_coachf;
+	6..8:	sw_0_series_pantof;
+	9..11:	sw_0_series_cab02f;
+}
+
+switch (FEAT_TRAINS, SELF, sw_0_series_4car_backwards, position_in_consist) {
+	0..2:	sw_0_series_cab02b;
+	3..5:	sw_0_series_coachb;
+	6..8:	sw_0_series_pantob;
+	9..11:	sw_0_series_cab01b;
+}
+
+switch (FEAT_TRAINS, PARENT, sw_0_series_4car_graphics, vehicle_is_reversed) {
+	0:	sw_0_series_4car_forwards;
+	sw_0_series_4car_backwards;
+}
+# 1 "src/trains/0_series/0_series.pnml" 2
+# 1 "src/trains/0_series/0_series_4car_item.pnml" 1
+
+/* Articulated part callback — 11 additional parts for a 12-part (4-car) fixed formation */
+switch (FEAT_TRAINS, SELF, sw_0_series_4car_articulated_part, extra_callback_info1) {
+	1 .. 11: return series_0_4car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/* Reject any wagon attachments — this is a fixed formation */
+switch (FEAT_TRAINS, SELF, sw_0_series_4car_attach, 0) {
+	return string(ONLY_ADD_MUCAR_FULL);
+}
+
+item(FEAT_TRAINS, series_0_4car) {
+	property {
+		/* Menu */
+		name:                           string(STR_NAME_0_SERIES_4CAR);
+		sprite_id:                      SPRITE_ID_NEW_TRAIN;
+		misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_TILT, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_2CC, TRAIN_FLAG_SPRITE_STACK);
+		running_cost_base:              RUNNING_COST_ELECTRIC;
+		engine_class:                   ENGINE_CLASS_ELECTRIC;
+		variant_group:                  123;
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW);
+		/* Availability */
+		climates_available:             ALL_CLIMATES;
+		introduction_date:              date(1964,10,01);
+		model_life:                     1987 - 1964;
+		vehicle_life:                   30;
+		track_type:                     SHINKANSEN;
+		/* Cargo */
+		reliability_decay:              5;
+		refittable_cargo_classes:       bitmask(CC_PASSENGERS);
+		refit_cost:                     0;
+		default_cargo_type:             PASS;
+		ai_special_flag:                AI_FLAG_PASSENGER;
+		cargo_capacity:                 1;
+		loading_speed:                  50;
+		cargo_age_period:               278;
+		/* Stats — static defaults, overwritten by callbacks */
+		speed:                          211 km/h;
+		power:                          3968 kW;
+		weight:                         244 ton;
+		tractive_effort_coefficient:    0.3;
+		air_drag_coefficient:           0;
+	}
+	graphics {
+		/* Menu */
+		additional_text:                string(STR_DESC_0_SERIES);
+		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
+		can_attach_wagon:               sw_0_series_4car_attach;
+		purchase_weight:                244;
+		purchase_power:                 4 * 248 * 4;
+		/* Graphics */
+		default:                        sw_0_series_4car_graphics;
+		purchase:                       sw_0_series_purchase;
+		articulated_part:               sw_0_series_4car_articulated_part;
+		visual_effect_and_powered:      sw_visual_effect_and_powered;
+		/* Stats */
+		length:                         sw_length_1_8_1;
+		speed:                          sw_0_series_speed;
+		weight:                         NumberCarsInConsist() * 61;
+		power:                          NumberCarsInConsist() * 248 * 4;
+		cargo_capacity:                 28 * CapacityFactor();
+		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
+		cargo_age_period:               param_decay_express;
+		cost_factor:                    500;
+		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor();
+		purchase_running_cost_factor:   300 + 125 * NumberCarsInConsist();
+	}
 }
 # 1 "src/trains/0_series/0_series.pnml" 2
 # 1 "JPplusShinkansen.pnml" 4

@@ -73,6 +73,7 @@ MUCAR_MAGLEV_DESC           :{BLACK}Compatibility: {GOLD}MagLev Shinkansen
 
 # 0 Series Shinkansen
 STR_NAME_0_SERIES           :0 Series Shinkansen
+STR_NAME_0_SERIES_4CAR      :0 Series Shinkansen (Short Formation)
 STR_DESC_0_SERIES           :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {WHITE}JNR{}{BLACK}MU Car: {GOLD} JP+ Shinkansen Car
 LV_0_SERIES_ORIGINAL        : 0 Series {BLUE}Original Livery
 LV_0_SERIES_KODAMA          : 0 Series {GREEN}Kodama Livery

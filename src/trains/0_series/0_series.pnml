@@ -6,3 +6,5 @@
 #include "src/trains/0_series/0_series_panto.pnml"
 #include "src/trains/0_series/0_series_formations.pnml"
 #include "src/trains/0_series/0_series_item.pnml"
+#include "src/trains/0_series/0_series_4car_formations.pnml"
+#include "src/trains/0_series/0_series_4car_item.pnml"
