@@ -1,0 +1,45 @@
+
+/* NH Formation 16-car (-1000 subseries): cab01 + (coach,panto)×7 + cab02 = 16 cars, 48 positions */
+
+switch (FEAT_TRAINS, SELF, sw_0_series_NH_forwards, position_in_consist) {
+	0..2:	sw_0_series_cab01f;
+	3..5:	sw_0_series_coachf;
+	6..8:	sw_0_series_pantof;
+	9..11:	sw_0_series_coachf;
+	12..14:	sw_0_series_pantof;
+	15..17:	sw_0_series_coachf;
+	18..20:	sw_0_series_pantof;
+	21..23:	sw_0_series_coachf;
+	24..26:	sw_0_series_pantof;
+	27..29:	sw_0_series_coachf;
+	30..32:	sw_0_series_pantof;
+	33..35:	sw_0_series_coachf;
+	36..38:	sw_0_series_pantof;
+	39..41:	sw_0_series_coachf;
+	42..44:	sw_0_series_pantof;
+	45..47:	sw_0_series_cab02f;
+}
+
+switch (FEAT_TRAINS, SELF, sw_0_series_NH_backwards, position_in_consist) {
+	0..2:	sw_0_series_cab02b;
+	3..5:	sw_0_series_pantob;
+	6..8:	sw_0_series_coachb;
+	9..11:	sw_0_series_pantob;
+	12..14:	sw_0_series_coachb;
+	15..17:	sw_0_series_pantob;
+	18..20:	sw_0_series_coachb;
+	21..23:	sw_0_series_pantob;
+	24..26:	sw_0_series_coachb;
+	27..29:	sw_0_series_pantob;
+	30..32:	sw_0_series_coachb;
+	33..35:	sw_0_series_pantob;
+	36..38:	sw_0_series_coachb;
+	39..41:	sw_0_series_pantob;
+	42..44:	sw_0_series_coachb;
+	45..47:	sw_0_series_cab01b;
+}
+
+switch (FEAT_TRAINS, PARENT, sw_0_series_NH_graphics, vehicle_is_reversed) {
+	0:	sw_0_series_NH_forwards;
+	sw_0_series_NH_backwards;
+}
