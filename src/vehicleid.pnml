@@ -6,6 +6,7 @@ item(FEAT_TRAINS, mu_car_full, 1112) {}
 item(FEAT_TRAINS, mu_car_mail, 1113) {}
 
 item(FEAT_TRAINS, series_0, 123) {}
+item(FEAT_TRAINS, series_0_4car, 126) {}
 item(FEAT_TRAINS, series_922, 922) {}
 item(FEAT_TRAINS, series_100, 124) {}
 // 200 Series Shinkansen
