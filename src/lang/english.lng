@@ -76,8 +76,8 @@ STR_NAME_0_SERIES           :0 Series Shinkansen
 STR_NAME_0_SERIES_H12       :0 Series Shinkansen H Formation (12-car)
 STR_NAME_0_SERIES_H16       :0 Series Shinkansen H Formation (16-car)
 STR_NAME_0_SERIES_K16       :0 Series Shinkansen K Formation (16-car)
-STR_NAME_0_SERIES_NH        :0 Series Shinkansen NH Formation
-STR_NAME_0_SERIES_YK        :0 Series Shinkansen YK Formation
+STR_NAME_0_SERIES_NH        :0 Series Shinkansen NH Formation (16-car)
+STR_NAME_0_SERIES_YK        :0 Series Shinkansen YK Formation (16-car)
 STR_NAME_0_SERIES_SK        :0 Series Shinkansen SK Formation (12-car)
 STR_NAME_0_SERIES_R6        :0 Series Shinkansen R Formation (6-car)
 STR_NAME_0_SERIES_Q4        :0 Series Shinkansen Q Formation (4-car)
