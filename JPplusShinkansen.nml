@@ -2209,8 +2209,8 @@ item(FEAT_TRAINS, series_0_H12) {
 		speed:                          sw_0_series_speed;
 		weight:                         NumberCarsInConsist() * 61;
 		power:                          NumberCarsInConsist() * 248 * 4;
-		cargo_capacity:                 28 * CapacityFactor();
-		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
+		cargo_capacity:                 33 * CapacityFactor();
+		loading_speed:                  33 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
 		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
@@ -2441,8 +2441,8 @@ item(FEAT_TRAINS, series_0_K16) {
 		speed:                          sw_0_series_speed;
 		weight:                         NumberCarsInConsist() * 61;
 		power:                          NumberCarsInConsist() * 248 * 4;
-		cargo_capacity:                 28 * CapacityFactor();
-		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
+		cargo_capacity:                 27 * CapacityFactor();
+		loading_speed:                  27 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
 		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
@@ -2673,8 +2673,8 @@ item(FEAT_TRAINS, series_0_YK) {
 		speed:                          sw_0_series_speed;
 		weight:                         NumberCarsInConsist() * 61;
 		power:                          NumberCarsInConsist() * 248 * 4;
-		cargo_capacity:                 28 * CapacityFactor();
-		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
+		cargo_capacity:                 25 * CapacityFactor();
+		loading_speed:                  25 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
 		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
@@ -2781,8 +2781,8 @@ item(FEAT_TRAINS, series_0_SK) {
 		speed:                          sw_0_series_speed;
 		weight:                         NumberCarsInConsist() * 61;
 		power:                          NumberCarsInConsist() * 248 * 4;
-		cargo_capacity:                 28 * CapacityFactor();
-		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
+		cargo_capacity:                 24 * CapacityFactor();
+		loading_speed:                  24 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
 		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
@@ -2877,8 +2877,8 @@ item(FEAT_TRAINS, series_0_R6) {
 		speed:                          sw_0_series_speed;
 		weight:                         NumberCarsInConsist() * 61;
 		power:                          NumberCarsInConsist() * 248 * 4;
-		cargo_capacity:                 28 * CapacityFactor();
-		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
+		cargo_capacity:                 22 * CapacityFactor();
+		loading_speed:                  22 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
 		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
@@ -2969,8 +2969,8 @@ item(FEAT_TRAINS, series_0_Q4) {
 		speed:                          sw_0_series_speed;
 		weight:                         NumberCarsInConsist() * 61;
 		power:                          NumberCarsInConsist() * 248 * 4;
-		cargo_capacity:                 28 * CapacityFactor();
-		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
+		cargo_capacity:                 20 * CapacityFactor();
+		loading_speed:                  20 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
 		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
