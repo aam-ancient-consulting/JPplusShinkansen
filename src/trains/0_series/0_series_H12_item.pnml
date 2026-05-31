@@ -5,10 +5,6 @@ switch (FEAT_TRAINS, SELF, sw_0_series_H12_articulated_part, extra_callback_info
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, sw_0_series_H12_attach, 0) {
-	return string(ONLY_ADD_MUCAR_FULL);
-}
-
 item(FEAT_TRAINS, series_0_H12) {
 	property {
 		/* Menu */
@@ -45,7 +41,7 @@ item(FEAT_TRAINS, series_0_H12) {
 		/* Menu */
 		additional_text:                string(STR_DESC_0_SERIES);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
-		can_attach_wagon:               sw_0_series_H12_attach;
+		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
 		purchase_power:                 4 * 248 * 4;
 		/* Graphics */

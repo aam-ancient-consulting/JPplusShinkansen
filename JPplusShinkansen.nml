@@ -512,7 +512,14 @@ item(FEAT_TRAINS, mu_car_full, 1112) {}
 item(FEAT_TRAINS, mu_car_mail, 1113) {}
 
 item(FEAT_TRAINS, series_0, 123) {}
-item(FEAT_TRAINS, series_0_4car, 126) {}
+item(FEAT_TRAINS, series_0_H12, 130) {}
+item(FEAT_TRAINS, series_0_H16, 131) {}
+item(FEAT_TRAINS, series_0_K16, 132) {}
+item(FEAT_TRAINS, series_0_NH, 133) {}
+item(FEAT_TRAINS, series_0_YK, 134) {}
+item(FEAT_TRAINS, series_0_SK, 135) {}
+item(FEAT_TRAINS, series_0_R6, 136) {}
+item(FEAT_TRAINS, series_0_Q4, 137) {}
 item(FEAT_TRAINS, series_922, 922) {}
 item(FEAT_TRAINS, series_100, 124) {}
 // 200 Series Shinkansen
@@ -561,6 +568,14 @@ sort(FEAT_TRAINS, [
 /* Not JR East */
 125,    // L0 Series Shinkansen
 123,    // 0 Series Shinkansen
+130,    // 0 Series H Formation (12-car)
+131,    // 0 Series H Formation (16-car)
+132,    // 0 Series K Formation (16-car)
+133,    // 0 Series NH Formation (16-car)
+134,    // 0 Series YK Formation (16-car)
+135,    // 0 Series SK Formation (12-car)
+136,    // 0 Series R Formation (6-car)
+137,    // 0 Series Q Formation (4-car)
 922,    // 922 Series Shinkansen
 124,    // 100 Series Shinkansen
 300,    // 300 Series Shinkansen
@@ -684,7 +699,6 @@ switch(FEAT_TRAINS, SELF, logo_jppsks, param_hide_logo) {1:sprite_logo_jppsks;}
             cargo_age_period:             185;
             refit_cost:                   0;
             track_type:                   MINI_SHINKANSEN;
-            extra_flags:                  bitmask(4);
             ai_special_flag:              AI_FLAG_PASSENGER;
             running_cost_base:            RUNNING_COST_ELECTRIC;
             engine_class:                 ENGINE_CLASS_ELECTRIC;
@@ -889,7 +903,6 @@ switch(FEAT_TRAINS, SELF, logo_jppsks, param_hide_logo) {1:sprite_logo_jppsks;}
             cargo_age_period:             185;
             refit_cost:                   0;
             track_type:                   SHINKANSEN;
-            extra_flags:                  bitmask(4);
             ai_special_flag:              AI_FLAG_PASSENGER;
             running_cost_base:            RUNNING_COST_ELECTRIC;
             engine_class:                 ENGINE_CLASS_ELECTRIC;
@@ -2157,10 +2170,6 @@ switch (FEAT_TRAINS, SELF, sw_0_series_H12_articulated_part, extra_callback_info
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, sw_0_series_H12_attach, 0) {
-	return string(ONLY_ADD_MUCAR_FULL);
-}
-
 item(FEAT_TRAINS, series_0_H12) {
 	property {
 		/* Menu */
@@ -2197,7 +2206,7 @@ item(FEAT_TRAINS, series_0_H12) {
 		/* Menu */
 		additional_text:                string(STR_DESC_0_SERIES);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
-		can_attach_wagon:               sw_0_series_H12_attach;
+		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
 		purchase_power:                 4 * 248 * 4;
 		/* Graphics */
@@ -2273,10 +2282,6 @@ switch (FEAT_TRAINS, SELF, sw_0_series_H16_articulated_part, extra_callback_info
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, sw_0_series_H16_attach, 0) {
-	return string(ONLY_ADD_MUCAR_FULL);
-}
-
 item(FEAT_TRAINS, series_0_H16) {
 	property {
 		/* Menu */
@@ -2313,7 +2318,7 @@ item(FEAT_TRAINS, series_0_H16) {
 		/* Menu */
 		additional_text:                string(STR_DESC_0_SERIES);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
-		can_attach_wagon:               sw_0_series_H16_attach;
+		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
 		purchase_power:                 4 * 248 * 4;
 		/* Graphics */
@@ -2389,10 +2394,6 @@ switch (FEAT_TRAINS, SELF, sw_0_series_K16_articulated_part, extra_callback_info
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, sw_0_series_K16_attach, 0) {
-	return string(ONLY_ADD_MUCAR_FULL);
-}
-
 item(FEAT_TRAINS, series_0_K16) {
 	property {
 		/* Menu */
@@ -2429,7 +2430,7 @@ item(FEAT_TRAINS, series_0_K16) {
 		/* Menu */
 		additional_text:                string(STR_DESC_0_SERIES);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
-		can_attach_wagon:               sw_0_series_K16_attach;
+		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
 		purchase_power:                 4 * 248 * 4;
 		/* Graphics */
@@ -2505,10 +2506,6 @@ switch (FEAT_TRAINS, SELF, sw_0_series_NH_articulated_part, extra_callback_info1
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, sw_0_series_NH_attach, 0) {
-	return string(ONLY_ADD_MUCAR_FULL);
-}
-
 item(FEAT_TRAINS, series_0_NH) {
 	property {
 		/* Menu */
@@ -2545,7 +2542,7 @@ item(FEAT_TRAINS, series_0_NH) {
 		/* Menu */
 		additional_text:                string(STR_DESC_0_SERIES);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
-		can_attach_wagon:               sw_0_series_NH_attach;
+		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
 		purchase_power:                 4 * 248 * 4;
 		/* Graphics */
@@ -2621,10 +2618,6 @@ switch (FEAT_TRAINS, SELF, sw_0_series_YK_articulated_part, extra_callback_info1
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, sw_0_series_YK_attach, 0) {
-	return string(ONLY_ADD_MUCAR_FULL);
-}
-
 item(FEAT_TRAINS, series_0_YK) {
 	property {
 		/* Menu */
@@ -2661,7 +2654,7 @@ item(FEAT_TRAINS, series_0_YK) {
 		/* Menu */
 		additional_text:                string(STR_DESC_0_SERIES);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
-		can_attach_wagon:               sw_0_series_YK_attach;
+		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
 		purchase_power:                 4 * 248 * 4;
 		/* Graphics */
@@ -2729,10 +2722,6 @@ switch (FEAT_TRAINS, SELF, sw_0_series_SK_articulated_part, extra_callback_info1
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, sw_0_series_SK_attach, 0) {
-	return string(ONLY_ADD_MUCAR_FULL);
-}
-
 item(FEAT_TRAINS, series_0_SK) {
 	property {
 		/* Menu */
@@ -2769,7 +2758,7 @@ item(FEAT_TRAINS, series_0_SK) {
 		/* Menu */
 		additional_text:                string(STR_DESC_0_SERIES);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
-		can_attach_wagon:               sw_0_series_SK_attach;
+		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
 		purchase_power:                 4 * 248 * 4;
 		/* Graphics */
@@ -2825,10 +2814,6 @@ switch (FEAT_TRAINS, SELF, sw_0_series_R6_articulated_part, extra_callback_info1
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, sw_0_series_R6_attach, 0) {
-	return string(ONLY_ADD_MUCAR_FULL);
-}
-
 item(FEAT_TRAINS, series_0_R6) {
 	property {
 		/* Menu */
@@ -2865,7 +2850,7 @@ item(FEAT_TRAINS, series_0_R6) {
 		/* Menu */
 		additional_text:                string(STR_DESC_0_SERIES);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
-		can_attach_wagon:               sw_0_series_R6_attach;
+		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
 		purchase_power:                 4 * 248 * 4;
 		/* Graphics */
@@ -2917,10 +2902,6 @@ switch (FEAT_TRAINS, SELF, sw_0_series_Q4_articulated_part, extra_callback_info1
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
-switch (FEAT_TRAINS, SELF, sw_0_series_Q4_attach, 0) {
-	return string(ONLY_ADD_MUCAR_FULL);
-}
-
 item(FEAT_TRAINS, series_0_Q4) {
 	property {
 		/* Menu */
@@ -2957,7 +2938,7 @@ item(FEAT_TRAINS, series_0_Q4) {
 		/* Menu */
 		additional_text:                string(STR_DESC_0_SERIES);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
-		can_attach_wagon:               sw_0_series_Q4_attach;
+		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
 		purchase_power:                 4 * 248 * 4;
 		/* Graphics */
