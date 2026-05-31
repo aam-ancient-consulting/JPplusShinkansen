@@ -98,7 +98,6 @@
             cargo_age_period:               185;
             refit_cost:                     0;
             track_type:                     SHINKANSEN;
-            extra_flags:                    bitmask(4);
             ai_special_flag:                AI_FLAG_PASSENGER;
             running_cost_base:              RUNNING_COST_ELECTRIC;
             engine_class:                   ENGINE_CLASS_ELECTRIC;
@@ -167,7 +166,6 @@
             cargo_age_period:               185;
             refit_cost:                     0;
             track_type:                     SC_MAGLEV;
-            extra_flags:                    bitmask(4);
             ai_special_flag:                AI_FLAG_PASSENGER;
             running_cost_base:              RUNNING_COST_ELECTRIC;
             engine_class:                   ENGINE_CLASS_ELECTRIC;
