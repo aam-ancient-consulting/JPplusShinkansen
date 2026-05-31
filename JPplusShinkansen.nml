@@ -2330,8 +2330,8 @@ item(FEAT_TRAINS, series_0_H16) {
 		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
-		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
-		purchase_running_cost_factor:   854;
+		running_cost_factor:            2178 * RunningCostFactor();
+		purchase_running_cost_factor:   2178;
 	}
 }
 # 1 "src/trains/0_series/0_series.pnml" 2
@@ -2446,8 +2446,8 @@ item(FEAT_TRAINS, series_0_K16) {
 		loading_speed:                  27 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
-		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
-		purchase_running_cost_factor:   854;
+		running_cost_factor:            2178 * RunningCostFactor();
+		purchase_running_cost_factor:   2178;
 	}
 }
 # 1 "src/trains/0_series/0_series.pnml" 2
@@ -2562,8 +2562,8 @@ item(FEAT_TRAINS, series_0_NH) {
 		loading_speed:                  28 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
-		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
-		purchase_running_cost_factor:   854;
+		running_cost_factor:            2178 * RunningCostFactor();
+		purchase_running_cost_factor:   2178;
 	}
 }
 # 1 "src/trains/0_series/0_series.pnml" 2
@@ -2678,8 +2678,8 @@ item(FEAT_TRAINS, series_0_YK) {
 		loading_speed:                  25 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
-		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
-		purchase_running_cost_factor:   854;
+		running_cost_factor:            2178 * RunningCostFactor();
+		purchase_running_cost_factor:   2178;
 	}
 }
 # 1 "src/trains/0_series/0_series.pnml" 2
@@ -2786,8 +2786,8 @@ item(FEAT_TRAINS, series_0_SK) {
 		loading_speed:                  24 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
-		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
-		purchase_running_cost_factor:   854;
+		running_cost_factor:            2178 * RunningCostFactor();
+		purchase_running_cost_factor:   2178;
 	}
 }
 # 1 "src/trains/0_series/0_series.pnml" 2
@@ -2882,8 +2882,8 @@ item(FEAT_TRAINS, series_0_R6) {
 		loading_speed:                  22 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
-		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
-		purchase_running_cost_factor:   854;
+		running_cost_factor:            2178 * RunningCostFactor();
+		purchase_running_cost_factor:   2178;
 	}
 }
 # 1 "src/trains/0_series/0_series.pnml" 2
@@ -2974,8 +2974,8 @@ item(FEAT_TRAINS, series_0_Q4) {
 		loading_speed:                  20 * CapacityFactor() / param_loading_2D;
 		cargo_age_period:               param_decay_express;
 		cost_factor:                    170;
-		running_cost_factor:            (300 + 125 * NumberCarsInConsist()) * RunningCostFactor() + 54;
-		purchase_running_cost_factor:   854;
+		running_cost_factor:            2178 * RunningCostFactor();
+		purchase_running_cost_factor:   2178;
 	}
 }
 # 1 "src/trains/0_series/0_series.pnml" 2
