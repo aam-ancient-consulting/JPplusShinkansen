@@ -84,6 +84,14 @@ STR_NAME_0_SERIES_R6        :0 Series Shinkansen R Formation (6-car)
 STR_NAME_0_SERIES_Q4        :0 Series Shinkansen Q Formation (4-car)
 
 STR_DESC_0_SERIES           :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {WHITE}JNR{}{BLACK}MU Car: {GOLD} JP+ Shinkansen Car
+STR_DESC_0_SERIES_H12       :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {WHITE}JNR
+STR_DESC_0_SERIES_H16       :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {WHITE}JNR {BLACK}, {ORANGE}JR Central {BLACK}& {BLUE}JR West
+STR_DESC_0_SERIES_K16       :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {WHITE}JNR {BLACK}& {ORANGE}JR Central
+STR_DESC_0_SERIES_NH        :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {WHITE}JNR {BLACK}, {ORANGE}JR Central {BLACK}& {BLUE}JR West
+STR_DESC_0_SERIES_YK        :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {ORANGE}JR Central
+STR_DESC_0_SERIES_SK        :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {BLUE}JR West
+STR_DESC_0_SERIES_R6        :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {BLUE}JR West
+STR_DESC_0_SERIES_Q4        :{BLACK}Gauge:{GOLD} Standard{}{BLACK}Usage: {SILVER}Express Passengers{}{BLACK}Operators: {BLUE}JR West
 
 LV_0_SERIES_ORIGINAL        : 0 Series {BLUE}Original Livery
 LV_0_SERIES_KODAMA          : 0 Series {GREEN}Kodama Livery

@@ -38,7 +38,7 @@ item(FEAT_TRAINS, series_0_NH) {
 	}
 	graphics {
 		/* Menu */
-		additional_text:                string(STR_DESC_0_SERIES);
+		additional_text:                string(STR_DESC_0_SERIES_NH);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
 		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;

@@ -2204,7 +2204,7 @@ item(FEAT_TRAINS, series_0_H12) {
 	}
 	graphics {
 		/* Menu */
-		additional_text:                string(STR_DESC_0_SERIES);
+		additional_text:                string(STR_DESC_0_SERIES_H12);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
 		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
@@ -2316,7 +2316,7 @@ item(FEAT_TRAINS, series_0_H16) {
 	}
 	graphics {
 		/* Menu */
-		additional_text:                string(STR_DESC_0_SERIES);
+		additional_text:                string(STR_DESC_0_SERIES_H16);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
 		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
@@ -2428,7 +2428,7 @@ item(FEAT_TRAINS, series_0_K16) {
 	}
 	graphics {
 		/* Menu */
-		additional_text:                string(STR_DESC_0_SERIES);
+		additional_text:                string(STR_DESC_0_SERIES_K16);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
 		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
@@ -2540,7 +2540,7 @@ item(FEAT_TRAINS, series_0_NH) {
 	}
 	graphics {
 		/* Menu */
-		additional_text:                string(STR_DESC_0_SERIES);
+		additional_text:                string(STR_DESC_0_SERIES_NH);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
 		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
@@ -2652,7 +2652,7 @@ item(FEAT_TRAINS, series_0_YK) {
 	}
 	graphics {
 		/* Menu */
-		additional_text:                string(STR_DESC_0_SERIES);
+		additional_text:                string(STR_DESC_0_SERIES_YK);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
 		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
@@ -2756,7 +2756,7 @@ item(FEAT_TRAINS, series_0_SK) {
 	}
 	graphics {
 		/* Menu */
-		additional_text:                string(STR_DESC_0_SERIES);
+		additional_text:                string(STR_DESC_0_SERIES_SK);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
 		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
@@ -2848,7 +2848,7 @@ item(FEAT_TRAINS, series_0_R6) {
 	}
 	graphics {
 		/* Menu */
-		additional_text:                string(STR_DESC_0_SERIES);
+		additional_text:                string(STR_DESC_0_SERIES_R6);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
 		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
@@ -2936,7 +2936,7 @@ item(FEAT_TRAINS, series_0_Q4) {
 	}
 	graphics {
 		/* Menu */
-		additional_text:                string(STR_DESC_0_SERIES);
+		additional_text:                string(STR_DESC_0_SERIES_Q4);
 		cargo_subtype_text:             sw_0_series_year_dep_subtype_text;
 		can_attach_wagon:               string(CANT_COUPLE_CONSIST);
 		purchase_weight:                244;
